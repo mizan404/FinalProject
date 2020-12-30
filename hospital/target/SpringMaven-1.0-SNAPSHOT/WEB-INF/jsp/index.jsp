@@ -35,7 +35,7 @@
         <div class="container" style="margin-top: 100px;height: 60px;">
             <p class="text-center" style="height: 20px;font-size: 30px;"><strong>Hospital Management and Information System</strong></p>
         </div>
-        <div class="container" style="margin-top: 20px;height: 575px;">
+        <div class="container" style="margin-top: 35px;height: 575px;">
             <div class="row">
                 <div class="col" style="width: 550px;"><img src="/resources/vendor/css/assets/img/hospital.png" style="width: 550px;"></div>
                 <div class="col">
@@ -47,38 +47,38 @@
                 </div>
             </div>
         </div>
-        <!--        <div class="shadow-lg footer-clean">
-                    <footer>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-sm-4 col-md-3 item">
-                                    <h3>Services</h3>
-                                    <ul>
-                                        <li><a href="#">Web design</a></li>
-                                        <li><a href="#">Development</a></li>
-                                        <li><a href="#">Hosting</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4 col-md-3 item">
-                                    <h3>About</h3>
-                                    <ul>
-                                        <li><a href="#">Company</a></li>
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">Legacy</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4 col-md-3 item">
-                                    <h3>Careers</h3>
-                                    <ul>
-                                        <li><a href="#">Job openings</a></li>
-                                        <li><a href="#">Employee success</a></li>
-                                        <li><a href="#">Benefits</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+        <div class="shadow-lg footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
                         </div>
-                    </footer>
-                </div>-->
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Legacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Careers</h3>
+                            <ul>
+                                <li><a href="#">Job openings</a></li>
+                                <li><a href="#">Employee success</a></li>
+                                <li><a href="#">Benefits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
         <script src="/resources/vendor/css/assets/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="/resources/vendor/css/assets/bootstrap/js/bootstrap.min.js"></script>
