@@ -11,18 +11,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
-@RestController()
-public class IndexController {
+//@RestController("admin")
+public class AdminController {
 
-    @RequestMapping("/")
-    public ModelAndView index() {
-        return new ModelAndView("index");
-    }
-
-    @RequestMapping("/login")
-    public ModelAndView login() {
-        return new ModelAndView("/commonlogin/commonlogin");
-    }
+//    @RequestMapping("admin/login")
+//    public ModelAndView index() {
+//        return new ModelAndView("/commonlogin/adminlogin");
+//    }
 }
