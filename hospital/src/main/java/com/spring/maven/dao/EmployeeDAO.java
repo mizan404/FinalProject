@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 @Repository(value = "employeeDAO")
 @Transactional

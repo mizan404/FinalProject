@@ -10,8 +10,8 @@ import com.spring.maven.model.Employee;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
-public interface IEmployeeService extends ICommonService<Employee>{
-    
+public interface IEmployeeService extends ICommonService<Employee> {
+
 }

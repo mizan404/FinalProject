@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 @RestController()
 public class IndexController {
@@ -24,5 +24,20 @@ public class IndexController {
     @RequestMapping("/login")
     public ModelAndView login() {
         return new ModelAndView("/commonlogin/commonlogin");
+    }
+
+    @RequestMapping("/admin-login")
+    public ModelAndView adminlogin() {
+        return new ModelAndView("/commonlogin/adminlogin");
+    }
+
+    @RequestMapping("/doctor-login")
+    public ModelAndView doctorlogin() {
+        return new ModelAndView("/commonlogin/doctorlogin");
+    }
+
+    @RequestMapping("/staff-login")
+    public ModelAndView stafflogin() {
+        return new ModelAndView("/commonlogin/stafflogin");
     }
 }

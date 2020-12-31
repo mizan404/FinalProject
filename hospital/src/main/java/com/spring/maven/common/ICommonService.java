@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 public interface ICommonService <T> {
     public T save(HttpServletRequest request);

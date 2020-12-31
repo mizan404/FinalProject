@@ -1,18 +1,17 @@
-<%-- 
-    Document   : doctorlogin
-    Created on : Dec 30, 2020, 7:41:15 AM
-    Author     : mohdm
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <h1>bari</h1>
-    </body>
-</html>
+<jsp:include page="/WEB-INF/jsp/common/header.jsp" />
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col">
+            <p class="text-center" style="font-size: 21px;"><strong>Doctor Login Page</strong></p>
+        </div>
+    </div>
+</div>
+<div class="login-clean" style="margin-top: 0px;background-color: rgb(255,255,255);">
+    <form class="shadow-lg" method="post">
+        <h2 class="sr-only">Login Form</h2>
+        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+    </form>
+</div>
+<jsp:include page="/WEB-INF/jsp/common/footer.jsp" />

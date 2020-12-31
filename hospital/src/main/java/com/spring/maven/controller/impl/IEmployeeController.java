@@ -10,7 +10,7 @@ import com.spring.maven.model.Employee;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 public interface IEmployeeController extends ICommonController<Employee>{
     public String getAllEmployees();

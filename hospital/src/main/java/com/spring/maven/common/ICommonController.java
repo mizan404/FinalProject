@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 public interface ICommonController<T> {
     public ModelAndView create();

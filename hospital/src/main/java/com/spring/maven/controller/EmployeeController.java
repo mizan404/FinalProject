@@ -25,7 +25,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Faculty Pc
+ * @author mohdm
  */
 @RestController
 @RequestMapping("/employee")

@@ -10,5 +10,5 @@ package com.spring.maven.model;
  * @author mohdm
  */
 public class Medicine {
-    
+
 }

@@ -1,15 +1,14 @@
 <jsp:include page="/WEB-INF/jsp/common/header.jsp" />
 
 
-<p class="text-uppercase text-center" style="margin-top: 150px;font-size: 56px;"><strong>Login</strong></p>
+<p class="text-uppercase text-center" style="margin-top: 125px;font-size: 45px;height: 80px;"><strong>Login PAge</strong></p>
 <div class="container text-center" style="margin-top: 50px;">
     <div class="row">
-        <div class="col"><button class="btn btn-secondary" type="button" style="width: 290px;height: 200px;font-size: 16px;"><a class="text-uppercase" href="adminlogin" style="color: rgb(255,255,255);font-size: 70px;"><strong>Admin</strong></a></button></div>
-        <div class="col"><button class="btn btn-success" type="button" style="width: 310px;height: 200px;font-size: 16px;"><a class="text-uppercase" href="doctorlogin" style="color: rgb(255,255,255);font-size: 70px;"><strong>Doctor</strong></a></button></div>
-        <div class="col"><button class="btn btn-primary" type="button" style="width: 290px;height: 200px;font-size: 16px;"><a class="text-uppercase" href="#" style="color: rgb(255,255,255);font-size: 70px;"><strong>Staff</strong></a></button></div>
+        <div class="col text-center"><a href="adminlogin"><button class="btn btn-primary btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>Admin</strong><br></button></a></div>
+        <div class="col"><a href="doctorlogin"><button class="btn btn-success btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>doctor</strong><br></button></a></div>
+        <div class="col"><a href="#"><button class="btn btn-warning btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>staff</strong><br></button></a></div>
     </div>
 </div>
-
 
 
 
