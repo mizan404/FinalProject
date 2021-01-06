@@ -47,8 +47,7 @@
         </property>
         <property name="annotatedClasses">
             <list>
-                <value>com.spring.maven.model.Patient</value>
-                <value>com.spring.maven.model.Hospital</value>
+               
             </list>
         </property>
     </bean>

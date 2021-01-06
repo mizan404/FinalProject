@@ -36,7 +36,7 @@ public class IndexController {
         return new ModelAndView("/commonlogin/doctorlogin");
     }
 
-    @RequestMapping("/staff-login")
+    @RequestMapping("/stafflogin")
     public ModelAndView stafflogin() {
         return new ModelAndView("/commonlogin/stafflogin");
     }

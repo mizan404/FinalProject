@@ -47,10 +47,8 @@
         </property>
         <property name="annotatedClasses">
             <list>
-                <value>com.spring.maven.model.Admin</value>
-                <value>com.spring.maven.model.Department</value>
-                <value>com.spring.maven.model.Doctor</value>
-                <value>com.spring.maven.model.Medicine</value>
+        
+                <value>com.spring.maven.model.Employee</value>
             </list>
         </property>
     </bean>
