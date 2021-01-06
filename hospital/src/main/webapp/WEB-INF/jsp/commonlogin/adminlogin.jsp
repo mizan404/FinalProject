@@ -15,7 +15,8 @@
         <div class="form-group"><input class="form-control" type="number" name="nid" placeholder="NID"></div>
         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
         <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+        <div class="form-group"><a href="/admin/dash" ><button class="btn btn-primary btn-block" type="submit">Log In</button></a></div>
     </form>
 </div>
 <jsp:include page="/WEB-INF/jsp/common/main/footer.jsp" />
+
