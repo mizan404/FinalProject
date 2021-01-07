@@ -23,25 +23,22 @@ public class IndexController {
 
     @RequestMapping("/login")
     public ModelAndView login() {
-        return new ModelAndView("/commonlogin/commonlogin");
+        return new ModelAndView("commonlogin/commonlogin");
     }
 
     @RequestMapping("/adminlogin")
     public ModelAndView adminlogin() {
-        return new ModelAndView("/commonlogin/adminlogin");
+        return new ModelAndView("commonlogin/adminlogin");
     }
 
     @RequestMapping("/doctorlogin")
     public ModelAndView doctorlogin() {
-        return new ModelAndView("/commonlogin/doctorlogin");
+        return new ModelAndView("commonlogin/doctorlogin");
     }
 
     @RequestMapping("/stafflogin")
     public ModelAndView stafflogin() {
-        return new ModelAndView("/commonlogin/stafflogin");
+        return new ModelAndView("commonlogin/stafflogin");
     }
 
-   
-    
-    
 }
