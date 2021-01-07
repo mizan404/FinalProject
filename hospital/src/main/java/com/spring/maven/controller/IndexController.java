@@ -41,8 +41,7 @@ public class IndexController {
         return new ModelAndView("/commonlogin/stafflogin");
     }
 
-    @RequestMapping("/dashboard")
-    public ModelAndView dashBoard() {
-        return new ModelAndView("/dashBoard/dashBoard");
-    }
+   
+    
+    
 }

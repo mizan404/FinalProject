@@ -18,8 +18,38 @@ import org.springframework.web.servlet.ModelAndView;
 public class DashBoardController {
 
     @RequestMapping("/dashboard")
-    public ModelAndView home() {
-        return new ModelAndView("/dashBoard/index");
+    public ModelAndView dashBoard() {
+        return new ModelAndView("/dashBoard/dashBoard");
+    }
+
+    @RequestMapping("/doctorpage")
+    public ModelAndView doctorPage() {
+        return new ModelAndView("/doctor/doctorpage");
+    }
+
+    @RequestMapping("/staffpage")
+    public ModelAndView staffPage() {
+        return new ModelAndView("/staff/staffpage");
+    }
+
+    @RequestMapping("/departmentpage")
+    public ModelAndView deparmentPage() {
+        return new ModelAndView("/department/departmentpage");
+    }
+
+    @RequestMapping("/laboratorypage")
+    public ModelAndView laboratoryPage() {
+        return new ModelAndView("/laboratory/laboratoryPage");
+    }
+
+    @RequestMapping("/medicinepage")
+    public ModelAndView medicinePage() {
+        return new ModelAndView("/medicine/medicinepage");
+    }
+
+    @RequestMapping("/adminpage")
+    public ModelAndView adminPage() {
+        return new ModelAndView("/admin/adminpage");
     }
 
 }
