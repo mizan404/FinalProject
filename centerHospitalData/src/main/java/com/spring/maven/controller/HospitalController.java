@@ -9,19 +9,28 @@ import com.spring.maven.controller.impl.IHospitalController;
 import com.spring.maven.model.Patient;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author mohdm
  */
+@RestController
 public class HospitalController implements IHospitalController {
 
     @Override
+    @RequestMapping("/admin/hospitalpage")
     public ModelAndView create() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new ModelAndView("hospital/hospitalpage");
     }
 
+//    @Override
+//    @RequestMapping("/admin/hospitalpage")
+//    public ModelAndView create() {
+//        return new ModelAndView("/admin/adminpage");
+//    }
     @Override
     public ModelAndView save(HttpServletRequest request) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

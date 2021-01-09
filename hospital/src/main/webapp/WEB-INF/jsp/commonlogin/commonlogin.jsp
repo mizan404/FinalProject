@@ -12,4 +12,4 @@
 
 
 
-<jsp:include page="/WEB-INF/jsp/common/extraCommon/footer.jsp" />
+<jsp:include page="/WEB-INF/jsp/common/main/footer.jsp" />

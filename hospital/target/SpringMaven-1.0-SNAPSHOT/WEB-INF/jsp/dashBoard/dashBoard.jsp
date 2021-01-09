@@ -15,7 +15,7 @@
     <body id="page-top" style="background-color: rgb(255,255,255);">
         <div id="wrapper" style="background-color: rgba(255,255,255,0);">
             <nav class="navbar navbar-dark bg-white align-items-start sidebar sidebar-dark accordion bg-gradient-primary1" style="background-color: #ffffff;width: 200px;height: 100%;">
-                <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="width: 55px;height: 60px;"><img src="assets/img/loader.gif" style="margin-top: 10px;color: rgb(159,86,86);width: 55px;filter: invert(0%);"></a>
+                <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="width: 80px;height: 60px;"><img src="/resources/vendor/css/assets/img/loader.gif" style="margin-top: 10px;color: rgb(159,86,86);width: 55px;"></a>
                     <ul
                         class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="dashboardForHospital.html"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Dashboard</span></a></li>

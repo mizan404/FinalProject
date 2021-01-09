@@ -47,7 +47,7 @@
         </property>
         <property name="annotatedClasses">
             <list>
-               
+                <value>com.spring.maven.model.Admin</value>
             </list>
         </property>
     </bean>

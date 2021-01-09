@@ -25,7 +25,7 @@ public class IndexController {
 //    public ModelAndView login() {
 //        return new ModelAndView("/commonlogin/commonlogin");
 //    }
-    @RequestMapping("/admin-login")
+    @RequestMapping("/login")
     public ModelAndView adminlogin() {
         return new ModelAndView("/commonlogin/adminlogin");
     }
@@ -34,8 +34,15 @@ public class IndexController {
     public ModelAndView doctorlogin() {
         return new ModelAndView("/index");
     }
-//    @RequestMapping("/stafflogin")
-//    public ModelAndView stafflogin() {
-//        return new ModelAndView("/commonlogin/stafflogin");
+
+    @RequestMapping("/admin/dashboard")
+    public ModelAndView dashBoard() {
+        return new ModelAndView("/dashboard/dashboard");
+    }
+
+//    @RequestMapping("/admin/adminpage")
+//    public ModelAndView adminpage() {
+//        return new ModelAndView("/admin/adminpage");
 //    }
+
 }

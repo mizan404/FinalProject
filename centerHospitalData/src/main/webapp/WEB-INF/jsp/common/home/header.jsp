@@ -17,30 +17,35 @@
         <link rel="stylesheet" href="/resources/vendor/css/assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
         <link rel="stylesheet" href="/resources/vendor/css/assets/fonts/fontawesome-all.min.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/Advanced-NavBar---Multi-dropdown.css">
-        <link rel="stylesheet" href="assets/css/Bootstrap-4---Table-Fixed-Header.css">
-        <link rel="stylesheet" href="assets/css/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.css">
-        <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-        <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-        <link rel="stylesheet" href="assets/css/FPE-Gentella-form-elements-1.css">
-        <link rel="stylesheet" href="assets/css/FPE-Gentella-form-elements.css">
-        <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Advanced-NavBar---Multi-dropdown.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Bootstrap-4---Table-Fixed-Header.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Footer-Basic.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Footer-Clean.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Footer-Dark.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/FPE-Gentella-form-elements-1.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/FPE-Gentella-form-elements.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Google-Style-Login.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-        <link rel="stylesheet" href="assets/css/Login-Center.css">
-        <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-        <link rel="stylesheet" href="assets/css/Pretty-Header.css">
-        <link rel="stylesheet" href="assets/css/Pretty-Product-List.css">
-        <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
-        <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
-        <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Login-Center.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Login-Form-Clean.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Pretty-Header.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Pretty-Product-List.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Profile-Edit-Form-1.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Profile-Edit-Form.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/styles.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search-1.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Profile-Edit-Form.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search-1.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search.css">
 
     </head>
     <body>
@@ -58,7 +63,7 @@
                 </nav>-->
 
         <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-lg" style="background-color: #ffffff;">
-            <div class="container"><a class="navbar-brand" href="#"><img data-bs-hover-animate="pulse" src="/resources/vendor/css/assets/img/loader.gif" style="width: 60px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="dashboard"><img data-bs-hover-animate="pulse" src="/resources/vendor/css/assets/img/loader.gif" style="width: 60px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <p class="text-dark mx-auto navbar-text" style="font-size: 22px;"><strong>Hospital Management and Information System</strong></p>

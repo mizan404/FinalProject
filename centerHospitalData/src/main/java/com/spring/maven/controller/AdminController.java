@@ -7,24 +7,52 @@ package com.spring.maven.controller;
 
 import com.spring.maven.controller.impl.IAdminController;
 import com.spring.maven.model.Admin;
+import com.spring.maven.service.impl.IAdminService;
+import java.util.HashMap;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author mohdm
  */
+@RestController
 public class AdminController implements IAdminController {
 
+    @Autowired
+    IAdminService adminService;
+
+//    @Override
+//    public ModelAndView create() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
     @Override
+    @RequestMapping("/admin/adminpage")
     public ModelAndView create() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new ModelAndView("/admin/adminpage");
     }
 
     @Override
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView save(HttpServletRequest request) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("-----------------------------------------------------------controller");
+        Admin admin = adminService.save(request);
+
+        Map<String, Object> map = new HashMap<>();
+        if (admin != null) {
+            map.put("status", "Data Saved");
+            return new ModelAndView("admin/adminpage", "map", map);
+        } else {
+            map.put("status", "Data NOT Saved");
+            return new ModelAndView("admin/adminpage", "map", map);
+        }
+
     }
 
     @Override
