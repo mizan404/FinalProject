@@ -22,7 +22,6 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-  
     private long adminId;
     @Column(name = "admin_nid")
     private long adminNid;
