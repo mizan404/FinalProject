@@ -5,21 +5,42 @@
  */
 package com.spr.mav.service;
 
+import com.spr.mav.dao.impl.IAdminDAO;
 import com.spr.mav.model.Admin;
 import com.spr.mav.service.impl.IAdminService;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mohdm
  */
+@Service(value = "adminService")
 public class AdminService implements IAdminService {
+
+    @Autowired
+    IAdminDAO adminDAO;
 
     @Override
     public Admin save(HttpServletRequest request) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int nid = Integer.parseInt(request.getParameter("admin_nid"));
+        String name = request.getParameter("admin_name");
+        String password = request.getParameter("admin_password");
+
+        Admin admin = new Admin();
+
+        admin.setAdmin_nid(nid);
+        admin.setAdmin_name(name);
+        admin.setAdmin_password(password);
+        return adminDAO.save(admin);
+
     }
+    
+    
+    
+    
 
     @Override
     public Admin update(HttpServletRequest request) {

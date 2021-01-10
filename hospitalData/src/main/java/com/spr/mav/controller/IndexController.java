@@ -13,107 +13,80 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author Faculty Pc
  */
-
 @RestController
 public class IndexController {
-    
-    
+
     @RequestMapping("/")
-    public ModelAndView index(){
+    public ModelAndView index() {
         return new ModelAndView("index");
     }
-    
-    
+
 //    AdminLog
-    
-     @RequestMapping("/login")
-    public ModelAndView login(){
-        return new ModelAndView("/admin/login");
+    @RequestMapping("/login")
+    public ModelAndView login() {
+        return new ModelAndView("/admin/adminlogin");
     }
-    
+
     // employeeLog
-     @RequestMapping("/employeeLog")
-    public ModelAndView emplogin(){
+    @RequestMapping("/employeeLog")
+    public ModelAndView emplogin() {
         return new ModelAndView("/admin/employeeLog");
     }
-    
-    
+
     //Adminreg
-     @RequestMapping("/adminreg")
-    public ModelAndView adminreg(){
+    @RequestMapping("/adminreg")
+    public ModelAndView adminreg() {
         return new ModelAndView("/admin/adminreg");
     }
-    
+
     //AdminPage
-    
-      @RequestMapping("/myAdmin")
-    public ModelAndView myAdmin(){
+    @RequestMapping("/myAdmin")
+    public ModelAndView myAdmin() {
         return new ModelAndView("/admin/myAdmin");
     }
-    
 
-    
-    
     //EmployeeData
-    
     @RequestMapping("/patientpage")
-    public ModelAndView adminDashBoard(){
+    public ModelAndView adminDashBoard() {
         return new ModelAndView("/admin/patientpage");
     }
-    
-    
-    
-    
-    
+
     //SalaryData
     @RequestMapping("/hospitalpage")
-    public ModelAndView salaryData(){
+    public ModelAndView salaryData() {
         return new ModelAndView("/admin/hospitalpage");
     }
-    
-    
-    
-    
+
     //leaveData
     @RequestMapping("/adminpage")
-    public ModelAndView leaveData(){
+    public ModelAndView leaveData() {
         return new ModelAndView("/admin/adminpage");
     }
-    
-    
+
     //taskData
-            
     @RequestMapping("/taskData")
-    public ModelAndView taskData(){
+    public ModelAndView taskData() {
         return new ModelAndView("/admin/taskData");
     }
-    
-    
+
     //projectData
     @RequestMapping("/projectData")
-    public ModelAndView projectData(){
+    public ModelAndView projectData() {
         return new ModelAndView("/admin/projectData");
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
     @RequestMapping("/faculty")
-    public ModelAndView faculty(){
+    public ModelAndView faculty() {
         return new ModelAndView("/admin/faculty");
     }
-    
+
     @RequestMapping("/library")
-    public ModelAndView library(){
+    public ModelAndView library() {
         return new ModelAndView("/admin/library");
     }
-    
+
     @RequestMapping("/notice")
-    public ModelAndView notice(){
+    public ModelAndView notice() {
         return new ModelAndView("/admin/notice");
     }
 }

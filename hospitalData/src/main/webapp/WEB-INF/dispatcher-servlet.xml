@@ -28,7 +28,7 @@
     <context:annotation-config/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/emp"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/centerhospitaldata"/>
         <property name="username" value="root"/>
         <property name="password" value="12345"/>
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -48,6 +48,7 @@
         <property name="annotatedClasses">
             <list>
                 <value>com.spr.mav.model.Employee</value>
+                <value>com.spr.mav.model.Admin</value>
             </list>
         </property>
     </bean>

@@ -5,7 +5,7 @@
  */
 package com.spr.mav.model;
 
-import groovy.transform.stc.ClosureParams;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -29,6 +29,9 @@ public class Admin {
     @Column(name = "admin_password")
     private String admin_password;
 
+    
+    
+    
     public int getId() {
         return id;
     }
