@@ -8,7 +8,6 @@ package com.spring.maven.service;
 import com.spring.maven.dao.impl.IAdminDAO;
 import com.spring.maven.model.Admin;
 import com.spring.maven.service.impl.IAdminService;
-import java.util.Map;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ import org.springframework.stereotype.Service;
  *
  * @author mohdm
  */
-@Service(value = "adminService")
+@Service
 public class AdminService implements IAdminService {
 
     @Autowired
@@ -26,12 +25,16 @@ public class AdminService implements IAdminService {
 
     @Override
     public Admin save(HttpServletRequest request) {
-        Map<String, String[]> map = request.getParameterMap();
+
+        int adminNid = Integer.parseInt(request.getParameter("adminnid"));
+        String adminName = request.getParameter("adminname");
+        String adminPassword = request.getParameter("adminpassword");
+
         Admin admin = new Admin();
-         System.out.println("-----------------------------------------------------------controller");
-        admin.setAdminNid(Long.parseLong(map.get("adminNid")[0]));
-        admin.setAdminName(map.get("adminName")[0]);
-        admin.setAdminPassword(map.get("adminPassword")[0]);
+
+        admin.setAdminnid(adminNid);
+        admin.setAdminname(adminName);
+        admin.setAdminpassword(adminPassword);
         return adminDAO.save(admin);
     }
 

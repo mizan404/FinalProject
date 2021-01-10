@@ -22,44 +22,44 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long adminId;
+    private int adminid;
     @Column(name = "admin_nid")
-    private long adminNid;
+    private int adminnid;
     @Column(name = "admin_name")
-    private String adminName;
+    private String adminname;
     @Column(name = "admin_password")
-    private String adminPassword;
+    private String adminpassword;
 
-    public long getAdminId() {
-        return adminId;
+    public int getAdminid() {
+        return adminid;
     }
 
-    public void setAdminId(long adminId) {
-        this.adminId = adminId;
+    public void setAdminid(int adminid) {
+        this.adminid = adminid;
     }
 
-    public long getAdminNid() {
-        return adminNid;
+    public int getAdminnid() {
+        return adminnid;
     }
 
-    public void setAdminNid(long adminNid) {
-        this.adminNid = adminNid;
+    public void setAdminnid(int adminnid) {
+        this.adminnid = adminnid;
     }
 
-    public String getAdminName() {
-        return adminName;
+    public String getAdminname() {
+        return adminname;
     }
 
-    public void setAdminName(String adminName) {
-        this.adminName = adminName;
+    public void setAdminname(String adminname) {
+        this.adminname = adminname;
     }
 
-    public String getAdminPassword() {
-        return adminPassword;
+    public String getAdminpassword() {
+        return adminpassword;
     }
 
-    public void setAdminPassword(String adminPassword) {
-        this.adminPassword = adminPassword;
+    public void setAdminpassword(String adminpassword) {
+        this.adminpassword = adminpassword;
     }
 
 }

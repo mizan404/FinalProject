@@ -33,7 +33,7 @@ public class AdminController implements IAdminController {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 //    }
     @Override
-    @RequestMapping("/admin/adminpage")
+    @RequestMapping("adminpage")
     public ModelAndView create() {
         return new ModelAndView("/admin/adminpage");
     }
@@ -41,18 +41,8 @@ public class AdminController implements IAdminController {
     @Override
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView save(HttpServletRequest request) {
-        System.out.println("-----------------------------------------------------------controller");
-        Admin admin = adminService.save(request);
-
-        Map<String, Object> map = new HashMap<>();
-        if (admin != null) {
-            map.put("status", "Data Saved");
-            return new ModelAndView("admin/adminpage", "map", map);
-        } else {
-            map.put("status", "Data NOT Saved");
-            return new ModelAndView("admin/adminpage", "map", map);
-        }
-
+        adminService.save(request);
+        return new ModelAndView("admin/adminpage");
     }
 
     @Override

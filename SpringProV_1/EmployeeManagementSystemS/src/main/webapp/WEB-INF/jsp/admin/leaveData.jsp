@@ -24,23 +24,23 @@
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
 
                 <li class="nav-item" role="presentation"><a class="nav-link " href="/employeeData"><i class="fa fa-database"></i><span>Data Management</span></a></li>
-
+                
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="/salaryData"><i class="fas fa fa-money"></i><span>Salary Management</span></a></li>
-
+                
                 <li class="nav-item" role="presentation"><a class="nav-link " href="/leaveData"><i class="fas fa-house-leave"></i><span>Leave Management</span></a></li>
-
+                
                 <li class="nav-item" role="presentation"><a class="nav-link " href="/taskData"><i class="fas fa-window-maximize"></i><span>Task Management</span></a></li>
-
+                
                 <li class="nav-item" role="presentation"><a class="nav-link " href="/projectData"><i class="fas fa-graduation-cap"></i><span>Project Management</span></a></li>
-
+                
             </ul>
             <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
     </nav>
-
-
-
-
+    
+    
+    
+    
     <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
             <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
@@ -171,7 +171,7 @@
                                     <li class="nav-item waves-effect waves-light">
                                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">View Semester</a>
                                     </li>
-
+                                    
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -193,7 +193,7 @@
                                                                 <select class="form-control">
                                                                     <option>Select University</option>
                                                                 </select>
-
+                                                                
                                                             </div>
                                                         </div>
                                                         <div class="row align-items-center">
@@ -203,7 +203,7 @@
                                                                 <select class="form-control">
                                                                     <option>Select Department</option>
                                                                 </select>
-
+                                                                
                                                             </div>
                                                         </div>
                                                         <div class="row align-items-center mt-4">
@@ -257,27 +257,27 @@
                                                                 <tr>
                                                                     <th>Semister Code</th>
                                                                     <th>Semister Name</th>
-
+                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                                                                     <td>Accountant</td>
-
+                                                                    
                                                                 </tr>
                                                                 <tr>
                                                                     <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
                                                                     <td>Chief Executive Officer(CEO)</td>
-
+                                                                    
                                                                 </tr>
-
+                                                               
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
                                                                     <td><strong>Name</strong></td>
                                                                     <td><strong>Position</strong></td>
-
+                                                                    
                                                                 </tr>
                                                             </tfoot>
                                                         </table>
@@ -302,7 +302,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    
                                 </div>
 
                             </section>

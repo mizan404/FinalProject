@@ -27,7 +27,11 @@ public class IndexController {
 //    }
     @RequestMapping("/login")
     public ModelAndView adminlogin() {
-        return new ModelAndView("/commonlogin/adminlogin");
+        return new ModelAndView("/admin/adminlogin");
+    }
+    @RequestMapping("/dashboard")
+    public ModelAndView dashBoard() {
+        return new ModelAndView("/admin/dashboard");
     }
 
     @RequestMapping("/home")
@@ -35,10 +39,6 @@ public class IndexController {
         return new ModelAndView("/index");
     }
 
-    @RequestMapping("/admin/dashboard")
-    public ModelAndView dashBoard() {
-        return new ModelAndView("/dashboard/dashboard");
-    }
 
 //    @RequestMapping("/admin/adminpage")
 //    public ModelAndView adminpage() {

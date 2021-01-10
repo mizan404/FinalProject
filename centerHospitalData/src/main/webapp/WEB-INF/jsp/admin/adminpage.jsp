@@ -1,89 +1,258 @@
-<jsp:include page="/WEB-INF/jsp/common/home/header.jsp" />
+<jsp:include page="/WEB-INF/jsp/common/header.jsp" />
+<div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bgm" >
+        <div class="container-fluid d-flex flex-column p-0">
+            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                <!--<div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>-->
+                <div class="sidebar-brand-text mx-3"><span>Admin</span></div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <ul class="nav navbar-nav text-light" id="accordionSidebar">
 
-s
+                <li class="nav-item" role="presentation"><a class="nav-link " href="/patientpage"><i class="fa fa-database"></i><span>Data Management</span></a></li>
 
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/hospitalpage"><i class="fas fa fa-money"></i><span>Salary Management</span></a></li>
 
+                <li class="nav-item" role="presentation"><a class="nav-link " href="/adminpage"><i class="fas fa-house-leave"></i><span>Leave Management</span></a></li>
 
-
-<div class="container" style="margin-top: 70px">
-    <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="tab" href="#save">Save &nbsp; </a></li>
-        <li><a data-toggle="tab" href="#update">Update &nbsp; </a></li>
-        <li><a data-toggle="tab" href="#ViewAndDelete"> View And Delete</a></li>
-
-    </ul>
-    <!------------------------------------------------------------------------------------------------------------->
-    <div class="tab-content">
-        <div id="save" class="tab-pane fade in active">
-            <div class="container profile profile-view" id="profile">
-                <form action="/save" method="post">
-                    <div class="form-row profile-row">
-                        <div class="col-md-8 offset-lg-2">
-                            <h1>Admin Profile </h1><p>${map.status}</p>
-                            <hr>
-                            <div class="form-group"><label><strong>Admin NID</strong></label><input class="border rounded border-dark form-control form-control-lg" type="number" id="adminNid" required="" name="adminNid"></div>
-                            <div class="form-group"><label>Admin Name</label><input class="form-control" type="text" name="adminName" id="adminName"></div>
-                            <div class="form-group"><label>Password </label><input class="form-control" type="password" name="adminPassword" required="" id="adminPassword"></div>
-                            <hr>
-                            <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">SAVE </button>
-                                    <button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            </ul>
+            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
-        <!------------------------------------------------------------------------------------------------------------->
-        <div id="update" class="tab-pane fade">
-            <div class="container profile profile-view" id="profile">
-                <form>
-                    <div class="form-row profile-row">
-                        <div class="col-md-8 offset-lg-2">
-                            <h1>Update Admin Profile </h1>
-                            <hr>
-                            <div class="form-group"><label><strong>Admin NID</strong></label><input class="border rounded border-dark form-control form-control-lg" type="number" required="" name="adminNid"></div>
-                            <div class="form-group"><label>Admin Name</label><input class="form-control" type="text" name="adminName"></div>
-                            <div class="form-group"><label>Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
-                            <hr>
-                            <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE</button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
-                            </div>
+    </nav>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+
+                    <nav class="navbar navbar-light  ">
+                        <div class="container">
+                            <p style="color: rgb(66,87,241);font-size: 20px; float: left"><strong>Hospital Management And Information System</strong></p>
+                            <ul class="nav navbar-nav flex-nowrap ml-auto">
+
+                            </ul>
                         </div>
+                    </nav>
+                    <ul class="nav navbar-nav flex-nowrap ml-auto">
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow" role="presentation"><a class="nav-link" href="#"><button class="btn btn-primary" type="button">Logout</button></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="container my-4">
+                    <p class="font-weight-bold">Admin</p>
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-xl-12 mb-4 mb-xl-0">
+                            <!-- Section: Live preview -->
+                            <section>
+                                <ul class="nav nav-pills" id="myTab" role="tablist">
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="home" aria-selected="false">Insert Admin Data</a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#update" role="tab" aria-controls="profile" aria-selected="false">Update Admin Data</a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Admin Data</a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Admin Data</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- Insert Section-->
+                                    <div class="tab-pane fade" id="insert" role="tabpanel" aria-labelledby="home-tab">
+                                        <section>
+                                            <div class="container-fluid">
+                                                <div class="container mt-5">
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Insert Admin Details</h4></div>
+                                                    <form action="/save" method="post">
+                                                        <div class="form-row p-0 m-0">
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
+                                                                <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->
+                                                                <div class="form-group"><input class="form-control" type="number" placeholder="Admin NID" name="adminnid"></div>
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Name" name="adminname"></div>
+
+                                                                <div class="form-group"><input class="form-control" type="password" placeholder="Admin Password" name="adminpassword"></div>
+                                                                <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="submit">Submit</button></div> 
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!--Update Section   -->
+                                    <div class="tab-pane fade" id="insert" role="tabpanel" aria-labelledby="home-tab">
+                                        <section>
+                                            <div class="container-fluid">
+                                                <div class="container mt-5">
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Update Admin Details</h4></div>
+                                                    <form >
+                                                        <div class="form-row p-0 m-0">
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
+                                                                <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminId"></div>-->
+                                                                <div class="form-group"><input class="form-control" type="number" placeholder="Admin NID" name="adminNid"></div>
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Name" name="adminName"></div>
+                                                                <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="submit">Submit</button></div> 
+                                                                <div class="form-group"><input class="form-control" type="password" placeholder="Admin Password" name="adminPassword"></div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!-- View Section-->
+                                    <div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="profile-tab">
+                                        <section>
+                                            <div class="container-fluid">
+                                                <div class="container mt-5">
+
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">List Of Admin Details</h4></div>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Admin ID</th>
+                                                                <th scope="col">Admin NID</th>
+                                                                <th scope="col">Admin Name</th>
+                                                                <th scope="col">Admin Password</th>
+
+
+
+
+
+                                                            </tr>
+                                                        </thead>
+
+                                                    </table>
+
+
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+
+
+
+
+
+
+
+                                    <!--Delete Section-->
+
+                                    <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="profile-tab">
+                                        <section>
+
+
+
+                                            <div class="container-fluid">
+                                                <div class="container mt-5">
+                                                    <div ><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Delete Admin Details</h4></div>
+
+                                                    <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                                        </div>
+                                                    </form>
+
+
+                                                    <form >
+                                                        <div class="form-row p-0 m-0">
+
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
+                                                            </div>
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
+                                                            </div>
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                <!-- <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div> -->
+                                                                <!-- <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div> -->
+                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
+                                                            </div>
+                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                <!-- <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
+                                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="button">Delete</button></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </section>
+
+
+                                    </div>
+                                </div>
+
+                            </section>
+                            <!-- Section: Live preview -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-xl-6">
+
+
+
+
+
+                        </div>
+                        <!-- Grid column -->
+
                     </div>
-                </form>
-            </div>
-        </div>
-        <!------------------------------------------------------------------------------------------------------------->
-        <div id="ViewAndDelete" class="tab-pane fade">
-            <div class="col-md-12 search-table-col">
-                <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control" placeholder="Search by typing here.."></div><span class="counter pull-right"></span>
-                <div class="table-responsive table-bordered table table-hover table-bordered results">
-                    <table class="table table-bordered table-hover">
-                        <thead class="bill-header cs">
-                            <tr>
-                                <th id="trs-hd" class="col-lg-1" style="width: 781px;">ID</th>
-                                <th id="trs-hd" class="col-lg-2" style="width: 795px;">NID</th>
-                                <th id="trs-hd" class="col-lg-3" style="width: 815px;">Name</th>
-                                <th id="trs-hd" class="col-lg-2" style="width: 829px;">Password</th>
-                                <th id="trs-hd" class="col-lg-2" style="width: 806px;">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="warning no-result">
-                                <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>India</td>
-                                <td>Souvik Kundu</td>
-                                <td>Bootstrap Stuido</td>
-                                <td><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="fa fa-check" style="font-size: 15px;"></i></button><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+
                 </div>
             </div>
+
+
+
+
+
+
+
         </div>
 
     </div>
@@ -92,6 +261,4 @@ s
 
 
 
-
-
-<jsp:include page="/WEB-INF/jsp/common/home/footer.jsp" />
+<jsp:include page="/WEB-INF/jsp/common/footer.jsp" />

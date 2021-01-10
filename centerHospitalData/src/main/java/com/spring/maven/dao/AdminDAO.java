@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author mohdm
  */
-@Repository(value = "adminDAO")
+@Repository
 @Transactional
 public class AdminDAO implements IAdminDAO {
 
