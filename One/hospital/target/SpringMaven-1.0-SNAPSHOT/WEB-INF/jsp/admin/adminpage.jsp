@@ -15,83 +15,97 @@
     <div class="tab-content">
         <div id="save" class="tab-pane fade in active">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 150px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
-                <form>
-                    <div class="form-row profile-row">
-                        <div class="col-md-4 relative">
-                            <div class="avatar">
-                                <div class="border rounded-0 avatar-bg center"></div>
-                            </div><input type="file" class="form-control" name="avatar-file"></div>
-                        <div class="col-md-8">
-                            <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Admin Profile</strong></h1>
-                            <hr>
-                            <div class="form-group"><label style="font-size: 16px;"><strong>Admin NID</strong></label><input class="form-control" type="number"></div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label style="font-size: 16px;"><strong>Admin Name</strong></label><input class="form-control" type="text" name="firstname"></div>
-                                </div>
+
+                <section>
+                    <form>
+                        <div class="form-row profile-row">
+                            <div class="col-md-4 relative">
+                                <!--                            <div class="avatar">
+                                                                <div class="border rounded-0 avatar-bg center"></div>
+                                                            </div><input type="file" class="form-control" name="avatar-file">
+                                -->
                             </div>
-                            <div class="form-row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label>Admin Role</label><select class="form-control"><optgroup label="Select A Role"><option value="IT">IT</option><option value="Admin">Admin</option></optgroup></select></div>
+                            <div class="col-md-8">
+                                <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Admin Profile</strong></h1>
+                                <hr>
+                                <div class="form-group"><label style="font-size: 16px;"><strong>Admin NID</strong></label><input class="form-control" type="number"></div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group"><label style="font-size: 16px;"><strong>Admin Name</strong></label><input class="form-control" type="text" name="firstname"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label style="font-size: 15px;">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
+                                <div class="form-row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group"><label>Admin Role</label><select class="form-control"><optgroup label="Select A Role"><option value="IT">IT</option><option value="Admin">Admin</option></optgroup></select></div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label style="font-size: 15px;">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
+                                <div class="form-row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group"><label style="font-size: 15px;">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
+                                    </div>
+                                    <!--                                    <div class="col-sm-12 col-md-6">
+                                                                            <div class="form-group"><label style="font-size: 15px;">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
+                                                                        </div>-->
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">SAVE </button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                <hr>
+                                <div class="form-row">
+                                    <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">SAVE </button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </section>
+
             </div>
         </div>
         <!------------------------------------------------------------------------------------------------------------->
         <div id="update" class="tab-pane fade">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 150px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
-                <form>
-                    <div class="form-row profile-row">
-                        <div class="col-md-4 relative">
-                            <div class="avatar">
-                                <div class="border rounded-0 avatar-bg center"></div>
-                            </div><input type="file" class="form-control" name="avatar-file"></div>
-                        <div class="col-md-8">
-                            <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Admin Profile</strong></h1>
-                            <hr>
-                            <div class="form-group"><label style="font-size: 16px;"><strong>Admin NID</strong></label><input class="form-control" type="number"></div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label style="font-size: 16px;"><strong>Admin Name</strong></label><input class="form-control" type="text" name="firstname"></div>
-                                </div>
+                <!--                <div class="row">
+                                    <div class="col-md-12 alert-col relative">
+                                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                                    </div>
+                                </div>-->
+                <section>
+                    <form>
+                        <div class="form-row profile-row">
+                            <div class="col-md-4 relative">
+                                <!--                                                        <div class="avatar">
+                                                                                            <div class="border rounded-0 avatar-bg center"></div>
+                                                                                        </div><input type="file" class="form-control" name="avatar-file">-->
+
                             </div>
-                            <div class="form-row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label>Admin Role</label><select class="form-control"><optgroup label="Select A Role"><option value="IT">IT</option><option value="Admin">Admin</option></optgroup></select></div>
+                            <div class="col-md-8">
+                                <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Admin Profile</strong></h1>
+                                <hr>
+                                <div class="form-group"><label style="font-size: 16px;"><strong>Admin NID</strong></label><input class="form-control" type="number"></div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group"><label style="font-size: 16px;"><strong>Admin Name</strong></label><input class="form-control" type="text" name="firstname"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">SAVE </button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                <div class="form-row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group"><label>Admin Role</label><select class="form-control"><optgroup label="Select A Role"><option value="IT">IT</option><option value="Admin">Admin</option></optgroup></select></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group"><label style="font-size: 15px;">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
+                                    </div>
+                                    <!--                                    <div class="col-sm-12 col-md-6">
+                                                                            <div class="form-group"><label style="font-size: 15px;">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
+                                                                        </div>-->
+                                </div>
+                                <hr>
+                                <div class="form-row">
+                                    <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE </button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </section>
+
             </div>
         </div>
         <!------------------------------------------------------------------------------------------------------------->
@@ -105,17 +119,12 @@
                             <table class="table table-bordered table-hover">
                                 <thead class="bill-header cs">
                                     <tr>
-                                        <th id="trs-hd" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-4" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-3" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-2" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-1" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 547px;">Area</th>
-                                        <th id="trs-hd" class="col-lg-3" style="width: 567px;">Customer Name</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 581px;">Company Name</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 560px;">Member Since</th>
-                                        <th id="trs-hd-5" class="col-lg-2" style="width: 560px;">Member Since</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 558px;">Action</th>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 528px;">id</th>
+                                        <th id="trs-hd-4" class="col-lg-1" style="width: 528px;">admin nid</th>
+                                        <th id="trs-hd-3" class="col-lg-1" style="width: 528px;">admin name</th>
+                                        <th id="trs-hd-2" class="col-lg-1" style="width: 528px;">password</th>
+                                        <th id="trs-hd-1" class="col-lg-1" style="width: 528px;">action</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -127,12 +136,7 @@
                                         <td>01</td>
                                         <td>01</td>
                                         <td>01</td>
-                                        <td>01</td>
-                                        <td>01</td>
-                                        <td>India</td>
-                                        <td>Souvik Kundu</td>
-                                        <td>Bootstrap Stuido</td>
-                                        <td>2014</td>
+
                                         <td class="text-center"><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="fa fa-check" style="font-size: 15px;"></i></button><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
                                     </tr>
                                 </tbody>

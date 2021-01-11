@@ -7,24 +7,35 @@ package com.spring.maven.controller;
 
 import com.spring.maven.controller.impl.IMedicineController;
 import com.spring.maven.model.Medicine;
+import com.spring.maven.service.impl.IMedicineService;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author mohdm
  */
+@RestController
 public class MedicineController implements IMedicineController {
+
+    @Autowired
+    IMedicineService medicineService;
 
     @Override
     public ModelAndView create() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
     @Override
     public ModelAndView save(HttpServletRequest request) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        medicineService.save(request);
+        return new ModelAndView("medicine/medicinepage");
     }
 
     @Override

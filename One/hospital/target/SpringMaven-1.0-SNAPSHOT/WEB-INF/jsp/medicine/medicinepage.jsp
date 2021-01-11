@@ -15,39 +15,44 @@
     <div class="tab-content">
         <div id="save" class="tab-pane fade in active">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 150px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
-                <form>
-                    <div class="form-row profile-row">
-                        <div class="col-md-8 col-lg-8 offset-lg-2">
-                            <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Medicine Profile</strong></h1>
-                            <hr>
-                            <div class="form-group"><label style="font-size: 16px;"><strong>Medicine ID</strong></label><input class="form-control" type="number"></div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label style="font-size: 16px;"><strong>Medicine Name</strong></label><input class="form-control" type="text" name="firstname"></div>
+                <!--                <div class="row">
+                                    <div class="col-md-12 alert-col relative">
+                                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                                    </div>
+                                </div>-->
+                <section>
+                    <form action="/save" method="POST">
+                        <div class="form-row profile-row">
+                            <div class="col-md-8 col-lg-8 offset-lg-2">
+                                <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Medicine Profile</strong></h1>
+                                <hr>
+                                <div class="form-group"><label style="font-size: 16px;"><strong>Medicine ID</strong></label><input class="form-control" type="text" name="id"></div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group"><label style="font-size: 16px;"><strong>Medicine Name</strong></label><input class="form-control" type="text" name="medicine_name"></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-row">
+                                    <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">SAVE</button>
+                                        <!--<button class="btn btn-danger form-btn" type="reset">CANCEL </button>-->
+                                    </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE</button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
-                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </section>
+
             </div>
         </div>
         <!------------------------------------------------------------------------------------------------------------->
         <div id="update" class="tab-pane fade">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 150px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
+                <!--                <div class="row">
+                                    <div class="col-md-12 alert-col relative">
+                                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                                    </div>
+                                </div>-->
                 <form>
                     <div class="form-row profile-row">
                         <div class="col-md-8 col-lg-8 offset-lg-2">
@@ -61,7 +66,9 @@
                             </div>
                             <hr>
                             <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE</button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE</button>
+                                    <!--<button class="btn btn-danger form-btn" type="reset">CANCEL </button>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,16 +86,16 @@
                             <table class="table table-bordered table-hover">
                                 <thead class="bill-header cs">
                                     <tr>
-                                        <th id="trs-hd" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-4" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-3" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-2" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd-1" class="col-lg-1" style="width: 528px;">SL. No.</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 547px;">Area</th>
-                                        <th id="trs-hd" class="col-lg-3" style="width: 567px;">Customer Name</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 581px;">Company Name</th>
-                                        <th id="trs-hd" class="col-lg-2" style="width: 560px;">Member Since</th>
-                                        <th id="trs-hd-5" class="col-lg-2" style="width: 560px;">Member Since</th>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 528px;">id</th>
+                                        <th id="trs-hd-4" class="col-lg-1" style="width: 528px;">Name</th>
+                                        <!--                                        <th id="trs-hd-3" class="col-lg-1" style="width: 528px;">SL. No.</th>
+                                                                                <th id="trs-hd-2" class="col-lg-1" style="width: 528px;">SL. No.</th>
+                                                                                <th id="trs-hd-1" class="col-lg-1" style="width: 528px;">SL. No.</th>
+                                                                                <th id="trs-hd" class="col-lg-2" style="width: 547px;">Area</th>
+                                                                                <th id="trs-hd" class="col-lg-3" style="width: 567px;">Customer Name</th>
+                                                                                <th id="trs-hd" class="col-lg-2" style="width: 581px;">Company Name</th>
+                                                                                <th id="trs-hd" class="col-lg-2" style="width: 560px;">Member Since</th>
+                                                                                <th id="trs-hd-5" class="col-lg-2" style="width: 560px;">Member Since</th>-->
                                         <th id="trs-hd" class="col-lg-2" style="width: 558px;">Action</th>
                                     </tr>
                                 </thead>
@@ -99,14 +106,7 @@
                                     <tr>
                                         <td>01</td>
                                         <td>01</td>
-                                        <td>01</td>
-                                        <td>01</td>
-                                        <td>01</td>
-                                        <td>01</td>
-                                        <td>India</td>
-                                        <td>Souvik Kundu</td>
-                                        <td>Bootstrap Stuido</td>
-                                        <td>2014</td>
+
                                         <td class="text-center"><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="fa fa-check" style="font-size: 15px;"></i></button><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
                                     </tr>
                                 </tbody>

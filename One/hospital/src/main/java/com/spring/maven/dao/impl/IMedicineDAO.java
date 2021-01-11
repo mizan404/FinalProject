@@ -13,5 +13,5 @@ import com.spring.maven.model.Medicine;
  * @author mohdm
  */
 public interface IMedicineDAO extends ICommonDAO<Medicine> {
-    
+
 }

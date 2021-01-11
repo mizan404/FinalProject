@@ -15,38 +15,51 @@
     <div class="tab-content">
         <div id="save" class="tab-pane fade in active">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 150px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
+                <!--                <div class="row">
+                                    <div class="col-md-12 alert-col relative">
+                                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                                    </div>
+                                </div>-->
                 <form>
                     <div class="form-row profile-row">
                         <div class="col-md-4 relative">
-                            <div class="avatar">
-                                <div class="border rounded-0 avatar-bg center"></div>
-                            </div><input type="file" class="form-control" name="avatar-file"></div>
+                            <!--                            <div class="avatar">
+                                                            <div class="border rounded-0 avatar-bg center"></div>
+                                                        </div><input type="file" class="form-control" name="avatar-file">
+                            -->
+                        </div>
                         <div class="col-md-8">
                             <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Staff Profile</strong></h1>
                             <hr>
-                            <div class="form-group"><label style="font-size: 16px;"><strong>Staff NID</strong></label><input class="form-control" type="number" required=""></div>
+                            <div class="form-group"><label style="font-size: 16px;"><strong>Staff NID</strong></label>
+                                <input class="form-control" type="text" required=""></div>
                             <div class="form-row">
                                 <div class="col">
-                                    <div class="form-group"><label style="font-size: 16px;"><strong>Staff Name</strong></label><input class="form-control" type="text" name="firstname" required=""></div>
+                                    <div class="form-group"><label style="font-size: 16px;"><strong>Staff Name</strong></label>
+                                        <input class="form-control" type="text" name="firstname" required=""></div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label style="font-size: 14px;">Staff Role</label><select class="form-control"><optgroup label="Select A Role"><option value="Desk">Desk</option><option value="Lab Assistant">Lab Assistant</option></optgroup></select></div>
+                                    <div class="form-group"><label style="font-size: 14px;">Staff Role</label>
+                                        <select class="form-control" name="role">
+                                            <optgroup label="Select A Role">
+                                                <option value="Desk">Desk</option>
+                                                <option value="Lab Assistant">Lab Assistant</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label>Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
+                                    <div class="form-group"><label>Password </label>
+                                        <input class="form-control" type="text" name="password" autocomplete="off" required="">
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
-                                </div>
+                                <!--                                    <div class="col-sm-12 col-md-6">
+                                                                        <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
+                                                                    </div>-->
                             </div>
                             <hr>
                             <div class="form-row">
@@ -60,24 +73,28 @@
         <!------------------------------------------------------------------------------------------------------------->
         <div id="update" class="tab-pane fade">
             <div class="container shadow-lg profile profile-view" id="profile" style="background-color: #f4f4f4;margin-top: 0px;margin-bottom: 0px;">
-                <div class="row">
-                    <div class="col-md-12 alert-col relative">
-                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-                    </div>
-                </div>
+                <!--                <div class="row">
+                                    <div class="col-md-12 alert-col relative">
+                                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                                    </div>
+                                </div>-->
                 <form>
                     <div class="form-row profile-row">
                         <div class="col-md-4 relative">
-                            <div class="avatar">
-                                <div class="border rounded-0 avatar-bg center"></div>
-                            </div><input type="file" class="form-control" name="avatar-file"></div>
+                            <!--                            <div class="avatar">
+                                                            <div class="border rounded-0 avatar-bg center"></div>
+                                                        </div><input type="file" class="form-control" name="avatar-file">
+                            
+                            
+                            -->
+                        </div>
                         <div class="col-md-8">
                             <h1 style="color: rgb(22,135,254);background-color: rgba(247,247,247,0);"><strong>Update Staff Profile</strong></h1>
                             <hr>
                             <div class="form-group"><label style="font-size: 16px;"><strong>Staff NID</strong></label><input class="form-control" type="number"></div>
                             <div class="form-row">
                                 <div class="col">
-                                    <div class="form-group"><label style="font-size: 16px;"><strong>Staff Name</strong></label><input class="form-control" type="text" name="firstname"></div>
+                                    <div class="form-group"><label style="font-size: 16px;"><strong>Staff Name</strong></label><input class="form-control" type="text" name="staffname"></div>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -85,9 +102,15 @@
                                     <div class="form-group"><label style="font-size: 14px;">Staff Role</label><select class="form-control"><optgroup label="Select A Role"><option value="Desk">Desk</option><option value="Lab Assistant">Lab Assistant</option></optgroup></select></div>
                                 </div>
                             </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group"><label>Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
+                            </div>
                             <hr>
                             <div class="form-row">
-                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE </button><button class="btn btn-danger form-btn" type="reset">CANCEL </button></div>
+                                <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE </button>
+
+
+                                </div>
                             </div>
                         </div>
                     </div>

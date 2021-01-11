@@ -5,20 +5,33 @@
  */
 package com.spring.maven.service;
 
+import com.spring.maven.dao.impl.IMedicineDAO;
 import com.spring.maven.model.Medicine;
 import com.spring.maven.service.impl.IMedicineService;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mohdm
  */
+@Service
 public class MedicineService implements IMedicineService {
+
+    @Autowired
+    IMedicineDAO medicineDAO;
 
     @Override
     public Medicine save(HttpServletRequest request) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("medicine_name");
+
+        Medicine medicine = new Medicine();
+        medicine.setId(id);
+        medicine.setMedicine_name(name);
+        return medicineDAO.save(medicine);
     }
 
     @Override

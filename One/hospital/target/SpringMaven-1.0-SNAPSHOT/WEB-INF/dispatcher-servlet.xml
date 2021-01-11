@@ -24,11 +24,11 @@
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" /> 
     
-    <context:component-scan base-package="com.spring.maven"/>
+    <context:component-scan base-package="com.spring.*"/>
     <context:annotation-config/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/hospital"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/hospitaldata"/>
         <property name="username" value="root"/>
         <property name="password" value="12345"/>
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -49,6 +49,8 @@
             <list>
         
                 <value>com.spring.maven.model.Employee</value>
+                <value>com.spring.maven.model.Medicine</value>
+                
             </list>
         </property>
     </bean>

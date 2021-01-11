@@ -8,11 +8,15 @@ package com.spring.maven.dao;
 import com.spring.maven.dao.impl.IAdminDAO;
 import com.spring.maven.model.Admin;
 import java.util.List;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author mohdm
  */
+@Repository
+@Transactional
 public class AdminDAO implements IAdminDAO {
 
     @Override
