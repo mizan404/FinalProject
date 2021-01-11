@@ -5,16 +5,23 @@
  */
 package com.spring.maven.service;
 
+import com.spring.maven.dao.impl.IPatientDAO;
 import com.spring.maven.model.Patient;
 import com.spring.maven.service.impl.IPatientService;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mohdm
  */
+@Service
 public class PatientService implements IPatientService {
+
+    @Autowired
+    IPatientDAO patientDAO;
 
     @Override
     public Patient save(HttpServletRequest request) {
